@@ -29,3 +29,4 @@ jobs:
           yarn lint
           yarn build
           yarn test:cov
+          bash <(curl -s https://codecov.io/bash)
