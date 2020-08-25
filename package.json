@@ -23,7 +23,7 @@
     "release": "standard-version --sign",
     "test": "mocha",
     "pretest:cov": "rimraf coverage .nyc_output",
-    "test:cov": "nyc mocha",
+    "test:cov": "nyc mocha --reporter lcovonly -- -R spec",
     "test:watch": "mocha --watch",
     "pretypings": "rimraf typings",
     "typings": "tsc --project tsconfig.build.json --declaration --declarationDir typings --emitDeclarationOnly"
